@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 783742021}
   - component: {fileID: 783742020}
   - component: {fileID: 783742019}
+  - component: {fileID: 783742024}
   m_Layer: 0
   m_Name: player1
   m_TagString: Untagged
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783742018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca798fb116606654297fc95ff8f7f872, type: 3}
   m_Name: 
@@ -288,12 +289,25 @@ Transform:
   m_GameObject: {fileID: 783742018}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -0.15, z: 0}
+  m_LocalPosition: {x: -1.41, y: -0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &783742024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783742018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640c34cb7a1a004479e11b9bc22ab33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
 --- !u!1 &1365612399
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +322,7 @@ GameObject:
   - component: {fileID: 1365612401}
   - component: {fileID: 1365612400}
   - component: {fileID: 1365612405}
+  - component: {fileID: 1365612406}
   m_Layer: 0
   m_Name: player2
   m_TagString: Untagged
@@ -322,13 +337,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365612399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fef15ed8f3e6d14997a2466fbb3abe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpSpeed: 4
+  jumpSpeed: 8
 --- !u!61 &1365612401
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -511,8 +526,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1, y: 0.15}
+  m_Size: {x: 1.2, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &1365612406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365612399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7519bcb4c92229e40b1bf946787898d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpSpeed: 3
 --- !u!1 &1784730190
 GameObject:
   m_ObjectHideFlags: 0
