@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField]
+    GameObject pauseMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +32,11 @@ public class PauseMenu : MonoBehaviour
             //reset the time scale to 1
             Time.timeScale = 1;
         }
+    }
+
+    public void Resume()
+    {
+        PauseMenu.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
     int health = 10;
     [SerializeField]
     string levelToLoad;
+
+    public Image healthBar;
 
 
 
@@ -32,6 +35,7 @@ public class PlayerHealth : MonoBehaviour
         {
             //health = health - 1;
             health -= 1;
+            healthBar.fillAmount = health / 100f;
             //health--;
             if (health <= 0)
             {
@@ -44,6 +48,8 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             health -= 1;
+            healthBar.fillAmount = health / 100f;
+
             if (health <= 0)
             {
                 SceneManager.LoadScene(levelToLoad);
@@ -60,6 +66,8 @@ public class PlayerHealth : MonoBehaviour
         {
             //health = health - 1;
             health -= 1;
+            healthBar.fillAmount = health / 100f;
+
             //health--;
             if (health <= 0)
             {
@@ -72,6 +80,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             health -= 1;
+            healthBar.fillAmount = health / 100f;
 
             if (health <= 0)
             {
