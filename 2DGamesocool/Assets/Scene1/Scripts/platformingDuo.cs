@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class platformingDuo : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class platformingDuo : MonoBehaviour
     float jumpSpeed = 2f;
     bool grounded = false;
     bool selected = true;
+
+    [SerializeField]
+    string levelToLoad = "winner";
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +65,11 @@ public class platformingDuo : MonoBehaviour
         {
             grounded = true;
         }
+
+        if (collision.gameObject.tag == "portal")
+        {
+            SceneManager.LoadScene(levelToLoad);
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -69,5 +78,7 @@ public class platformingDuo : MonoBehaviour
             grounded = false;
         }
     }
+
+   
 
 }
