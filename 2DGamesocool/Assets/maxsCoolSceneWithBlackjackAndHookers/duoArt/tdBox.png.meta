@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cd31db2f5cedbab4bbad6594ea96ccb5
+guid: f1c6b0e3b8e8bba4091079b3d9e4c210
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tdBoxActive
+      name: tdBox_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,20 +105,41 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 294971ee8219df849b3fb9dbb2d2d96e
-      internalID: 2117588780
+      spriteID: 33a03677f491eae4eb53b18f25dd1671
+      internalID: 1812048220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tdBoxUnactive
+      name: tdBox_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd675f9bff5ab2247bb48fe4ef69d721
+      internalID: 440494718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tdBox_2
       rect:
         serializedVersion: 2
         x: 0
@@ -126,14 +147,35 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 302e1827d8e83454eb27d8be7ea8d297
-      internalID: -1964043765
+      spriteID: 34743827ef650a44a9a508def0d08221
+      internalID: -299987364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tdBox_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb90d5785978a6499c36b9a79336c6e
+      internalID: 660444931
       vertices: []
       indices: 
       edges: []
@@ -149,8 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tdBoxActive: 2117588780
-      tdBoxUnactive: -1964043765
+      tdBox_0: 1812048220
+      tdBox_1: 440494718
+      tdBox_2: -299987364
+      tdBox_3: 660444931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

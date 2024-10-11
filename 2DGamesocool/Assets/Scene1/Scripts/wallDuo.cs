@@ -10,7 +10,7 @@ public class wallDuo : MonoBehaviour
     [SerializeField]
     GameObject buttonObj;
     [SerializeField]
-    bool diditwork = false;
+
 
 
     // Start is called before the first frame update
@@ -25,12 +25,12 @@ public class wallDuo : MonoBehaviour
         if (buttonObj.GetComponent<buttonDuo>().pressed)
         {
             GetComponent<BoxCollider2D>().enabled = false;
-            diditwork = true;
+           
         }
         else
         {
             GetComponent<BoxCollider2D>().enabled = true;
-            diditwork = false;
+            
         }
     }
 }
