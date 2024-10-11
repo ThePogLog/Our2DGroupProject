@@ -11,13 +11,15 @@ public class platformingDuo : MonoBehaviour
     float jumpSpeed = 2f;
     bool grounded = false;
     bool selected = true;
-
+    [SerializeField]
+    Animator anim;
     [SerializeField]
     string levelToLoad = "winner";
     // Start is called before the first frame update
     void Start()
     {
-
+        GetComponent<Animator>().SetBool("selected", true);
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,11 +32,12 @@ public class platformingDuo : MonoBehaviour
             {
                 selected = true;
                 GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                GetComponent<Animator>().SetBool("selected", true);
             }
             else
             {
                 selected = false;
-
+                GetComponent<Animator>().SetBool("selected", false);
             }
         }
 
@@ -49,6 +52,19 @@ public class platformingDuo : MonoBehaviour
             {
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 100 * jumpSpeed));
                 grounded = false;
+            }
+            anim.SetBool("grounded", grounded);
+            anim.SetFloat("y", velocity.y);
+            int x = (int)Input.GetAxisRaw("Horizontal");
+            anim.SetInteger("x", x);
+            if (x < 0)
+            {
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else if (x > 0)
+            {
+                GetComponent<SpriteRenderer>().flipX = false;
+
             }
         }
 
