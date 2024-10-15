@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class buttonDuo : MonoBehaviour
 {
-
-  public bool pressed = false;
+    [SerializeField]
+    Animator anim;
+    public bool pressed = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class buttonDuo : MonoBehaviour
         if (collision.gameObject.tag == "duoBox")
         {
             pressed = true;
+            GetComponent<Animator>().SetBool("pressed", true);
         }
     }
 
@@ -33,6 +35,7 @@ public class buttonDuo : MonoBehaviour
         if (collision.gameObject.tag == "duoBox")
         {
             pressed = false;
+            GetComponent<Animator>().SetBool("pressed", false);
         }
     }
 }
