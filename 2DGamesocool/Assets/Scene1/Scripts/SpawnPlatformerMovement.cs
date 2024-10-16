@@ -14,6 +14,15 @@ public class PlatformerMovement : MonoBehaviour
     public Canvas CubeHUD;
     public Tilemap Fake;
     public Grid Wall;
+    public Tilemap Dark1;
+    public Tilemap Dark2;
+    public Tilemap Dark3;
+    public GameObject OFDroid1;
+    public GameObject OFDroid2;
+    public GameObject OFDroid3;
+    public GameObject OFDroid4;
+    public GameObject OFDroid5;
+    public GameObject OFDroid6;
 
     void Start()
     {
@@ -73,10 +82,18 @@ public class PlatformerMovement : MonoBehaviour
     {
         CubeHUD.enabled = false;
         Wall.enabled = false;
-        Fake.GetComponent<TilemapRenderer>().enabled = true; // Access TilemapRenderer here
         yield return new WaitForSeconds(5);
         Wall.enabled = true;
-        Fake.GetComponent<TilemapRenderer>().enabled = false; // Access TilemapRenderer here
+        OFDroid1.GetComponent<SpriteRenderer>().color = Color.white;
+        OFDroid2.GetComponent<SpriteRenderer>().color = Color.white;
+        OFDroid3.GetComponent<SpriteRenderer>().color = Color.white;
+        OFDroid4.GetComponent<SpriteRenderer>().color = Color.white;
+        OFDroid5.GetComponent<SpriteRenderer>().color = Color.white;
+        OFDroid6.GetComponent<SpriteRenderer>().color = Color.white;
+        Fake.GetComponent<TilemapRenderer>().enabled = false;
+        Dark1.GetComponent<TilemapRenderer>().enabled = false;
+        Dark2.GetComponent<TilemapRenderer>().enabled = false;
+        Dark3.GetComponent<TilemapRenderer>().enabled = false;
         CubeHUD.enabled = true;
         spawned = true;
         yield return new WaitForSeconds(1);
