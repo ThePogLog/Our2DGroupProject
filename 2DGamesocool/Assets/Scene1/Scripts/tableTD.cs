@@ -7,23 +7,23 @@ public class tableTD : MonoBehaviour
 {
 
     [SerializeField]
-    bool active = false;
+    public bool active = false;
     [SerializeField]
-    bool fire = false;
+    public bool fire = false;
     [SerializeField]
-    bool water = false;
+    public bool water = false;
     [SerializeField]
-    bool earth = false;
+    public bool earth = false;
     [SerializeField]
-    bool wind = false;
+    public bool wind = false;
     [SerializeField]
-    bool creatures = false;
+    public bool creatures = false;
     [SerializeField]
-    bool beasts = false;
+    public bool beasts = false;
     [SerializeField]
-    bool minerals = false;
+    public bool minerals = false;
     [SerializeField]
-    bool horrors = false;
+    public bool horrors = false;
     // Start is called before the first frame update
     void Start()
     {
