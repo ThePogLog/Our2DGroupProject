@@ -6,7 +6,7 @@ using UnityEngine;
 public class duoEndingTrigger : MonoBehaviour
 {
     [SerializeField]
-    bool jumpscareTime = false;
+    public bool jumpscareTime = false;
     // Start is called before the first frame update
     void Start()
     {

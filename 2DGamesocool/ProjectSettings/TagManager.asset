@@ -8,6 +8,14 @@ TagManager:
   - platformingDuoCharacter
   - portal
   - duoBox
+  - elementFire
+  - elementWater
+  - elementEarth
+  - elementWind
+  - elementCreatures
+  - elementMinerals
+  - elementBeasts
+  - elementHorrors
   layers:
   - Default
   - TransparentFX
@@ -16,7 +24,7 @@ TagManager:
   - Water
   - UI
   - ground
-  - 
+  - elements
   - 
   - 
   - 
