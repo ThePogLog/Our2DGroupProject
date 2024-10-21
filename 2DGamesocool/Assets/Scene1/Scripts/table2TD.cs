@@ -38,11 +38,11 @@ public class tableTD2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.gameObject.layer == 7)
         {
             active = true;
         }
+
         if (collision.gameObject.tag == "elementFire")
         {
             fire = true;
@@ -90,7 +90,7 @@ public class tableTD2 : MonoBehaviour
             beasts = false;
             minerals = false;
             horrors = false;
-
         }
+ 
     }
 }
