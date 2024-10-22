@@ -28,5 +28,10 @@ public class resultTD : MonoBehaviour
             getCooken = false;
         }
 
+        if (getCooken)
+        {
+
+        }
+
     }
 }
