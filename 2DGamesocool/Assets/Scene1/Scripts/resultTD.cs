@@ -42,10 +42,48 @@ public class resultTD : MonoBehaviour
     public bool minerals2 = false;
     [SerializeField]
     public bool horrors2 = false;
+
+    [SerializeField]
+    Animator anim;
+    [SerializeField]
+    bool tooMuch = false;
+    [SerializeField]
+    bool set = false;
+
+    [SerializeField]
+    public bool fireTotal = false;
+    [SerializeField]
+    public bool waterTotal = false;
+    [SerializeField]
+    public bool earthTotal = false;
+    [SerializeField]
+    public bool windTotal = false;
+    [SerializeField]
+    public bool creaturesTotal = false;
+    [SerializeField]
+    public bool beastsTotal = false;
+    [SerializeField]
+    public bool mineralsTotal = false;
+    [SerializeField]
+    public bool horrorsTotal = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
+        GetComponent<Animator>().SetBool("tooMuch", false);
+
+        GetComponent<Animator>().SetBool("fire", false);
+        GetComponent<Animator>().SetBool("water", false);
+        GetComponent<Animator>().SetBool("wind", false);
+        GetComponent<Animator>().SetBool("earth", false);
+
+        GetComponent<Animator>().SetBool("creatures", false);
+        GetComponent<Animator>().SetBool("minerals", false);
+        GetComponent<Animator>().SetBool("beasts", false);
+        GetComponent<Animator>().SetBool("horrors", false);
+
+        GetComponent<Animator>().SetBool("set", false);
     }
 
     // Update is called once per frame
@@ -69,34 +107,41 @@ public class resultTD : MonoBehaviour
             else
             {
                 fire = false;
+
             }
             if (table1.GetComponent<tableTD>().water)
             {
                 water = true;
+
             }
             else
             {
                 water = false;
+
             }
             if (table1.GetComponent<tableTD>().wind)
             {
                 wind = true;
+
             }
             else
             {
                 wind = false;
+
             }
             if (table1.GetComponent<tableTD>().earth)
             {
                 earth = true;
+
             }
             else
             {
                 earth = false;
+
             }
             if (table1.GetComponent<tableTD>().creatures)
             {
-               creatures = true;
+                creatures = true;
             }
             else
             {
@@ -130,34 +175,42 @@ public class resultTD : MonoBehaviour
             if (table2.GetComponent<tableTD2>().fire)
             {
                 fire2 = true;
+
             }
             else
             {
                 fire2 = false;
+
             }
             if (table2.GetComponent<tableTD2>().water)
             {
                 water2 = true;
+
             }
             else
             {
                 water2 = false;
+
             }
             if (table2.GetComponent<tableTD2>().wind)
             {
                 wind2 = true;
+
             }
             else
             {
                 wind2 = false;
+
             }
             if (table2.GetComponent<tableTD2>().earth)
             {
                 earth2 = true;
+
             }
             else
             {
                 earth2 = false;
+
             }
             if (table2.GetComponent<tableTD2>().creatures)
             {
@@ -212,7 +265,386 @@ public class resultTD : MonoBehaviour
             minerals2 = false;
             horrors2 = false;
         }
+        if (fire || fire2)
+        {
 
+            GetComponent<Animator>().SetBool("fire", true);
+            fireTotal = true;
+        }
+        else
+        {
+
+            GetComponent<Animator>().SetBool("fire", false);
+            fireTotal = false;
+        }
+        if (water || water2)
+        {
+
+            GetComponent<Animator>().SetBool("water", true);
+            waterTotal = true;
+        }
+        else
+        {
+
+            GetComponent<Animator>().SetBool("water", false);
+            waterTotal = false;
+        }
+
+        if (wind || wind2)
+        {
+
+            GetComponent<Animator>().SetBool("wind", true);
+            windTotal = true;
+        }
+        else
+        {
+
+            GetComponent<Animator>().SetBool("wind", false);
+            windTotal = false;
+        }
+        if (earth || earth2)
+        {
+
+            GetComponent<Animator>().SetBool("earth", true);
+            earthTotal = true;
+        }
+        else
+        {
+
+            GetComponent<Animator>().SetBool("earth", false);
+            earthTotal = false;
+        }
+
+
+        if (creatures || creatures2)
+        {
+
+            GetComponent<Animator>().SetBool("creatures", true);
+            creaturesTotal = true;
+        }
+        else
+        {
+
+            GetComponent<Animator>().SetBool("creatures", false);
+            creaturesTotal = false;
+        }
+        if (beasts || beasts2)
+        {
+
+            GetComponent<Animator>().SetBool("beasts", true);
+            beastsTotal = true;
+        }
+        else
+        {
+
+            GetComponent<Animator>().SetBool("beasts", false);
+            beastsTotal = false;
+        }
+
+        if (minerals || minerals2)
+        {
+
+            GetComponent<Animator>().SetBool("minerals", true);
+            mineralsTotal = true;
+        }
+        else
+        {
+
+            GetComponent<Animator>().SetBool("minerals", false);
+            mineralsTotal = false;
+        }
+        if (horrors || horrors2)
+        {
+
+            GetComponent<Animator>().SetBool("horrors", true);
+            horrorsTotal = true;
+        }
+        else
+        {
+
+            GetComponent<Animator>().SetBool("horrors", false);
+            horrorsTotal = false;
+        }
+         
+        if (fireTotal && creaturesTotal)
+        {
+            if (!waterTotal && !windTotal && !earthTotal && !beastsTotal && !mineralsTotal && !horrorsTotal)
+            {
+                set = true;
+                tooMuch = false;
+            }
+            else
+            {
+             tooMuch = true;
+            set = false; 
+            }
+        }
+        else
+        {
+            if (fireTotal && beastsTotal)
+            {
+                if (!waterTotal && !windTotal && !earthTotal && !creaturesTotal && !mineralsTotal && !horrorsTotal)
+                {
+                    set = true;
+                    tooMuch = false;
+                }
+                else
+                {
+                    tooMuch = true;
+                    set = false;
+                }
+            }
+            else
+            {
+                if (fireTotal && mineralsTotal)
+                {
+                    if (!waterTotal && !windTotal && !earthTotal && !creaturesTotal && !beastsTotal && !horrorsTotal)
+                    {
+                        set = true;
+                        tooMuch = false;
+                    }
+                    else
+                    {
+                        tooMuch = true;
+                        set = false;
+                    }
+                }
+                else
+                {
+                    if (fireTotal && horrorsTotal)
+                    {
+                        if (!waterTotal && !windTotal && !earthTotal && !creaturesTotal && !beastsTotal && !mineralsTotal)
+                        {
+                            set = true;
+                            tooMuch = false;
+                        }
+                        else
+                        {
+                            tooMuch = true;
+                            set = false;
+                        }
+                    }
+                    else
+                    {
+                        if (waterTotal && creaturesTotal)
+                        {
+                            if (!fireTotal && !windTotal && !earthTotal && !beastsTotal && !mineralsTotal && !horrorsTotal)
+                            {
+                                set = true;
+                                tooMuch = false;
+                            }
+                            else
+                            {
+                                tooMuch = true;
+                                set = false;
+                            }
+                        }
+                        else
+                        {
+                            if (waterTotal && beastsTotal)
+                            {
+                                if (!fireTotal && !windTotal && !earthTotal && !creaturesTotal && !mineralsTotal && !horrorsTotal)
+                                {
+                                    set = true;
+                                    tooMuch = false;
+                                }
+                                else
+                                {
+                                    tooMuch = true;
+                                    set = false;
+                                }
+                            }
+                            else
+                            {
+                                if (waterTotal && mineralsTotal)
+                                {
+                                    if (!fireTotal && !windTotal && !earthTotal && !creaturesTotal && !beastsTotal && !horrorsTotal)
+                                    {
+                                        set = true;
+                                        tooMuch = false;
+                                    }
+                                    else
+                                    {
+                                        tooMuch = true;
+                                        set = false;
+                                    }
+                                }
+                                else
+                                {
+                                    if (waterTotal && horrorsTotal)
+                                    {
+                                        if (!fireTotal && !windTotal && !earthTotal && !creaturesTotal && !beastsTotal && !mineralsTotal)
+                                        {
+                                            set = true;
+                                            tooMuch = false;
+                                        }
+                                        else
+                                        {
+                                            tooMuch = true;
+                                            set = false;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (windTotal && creaturesTotal)
+                                        {
+                                            if (!waterTotal && !fireTotal && !earthTotal && !beastsTotal && !mineralsTotal && !horrorsTotal)
+                                            {
+                                                set = true;
+                                                tooMuch = false;
+                                            }
+                                            else
+                                            {
+                                                tooMuch = true;
+                                                set = false;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (windTotal && beastsTotal)
+                                            {
+                                                if (!waterTotal && !fireTotal && !earthTotal && !creaturesTotal && !mineralsTotal && !horrorsTotal)
+                                                {
+                                                    set = true;
+                                                    tooMuch = false;
+                                                }
+                                                else
+                                                {
+                                                    tooMuch = true;
+                                                    set = false;
+                                                }
+                                            }
+                                            else
+                                            {
+                                                if (windTotal && mineralsTotal)
+                                                {
+                                                    if (!waterTotal && !fireTotal && !earthTotal && !creaturesTotal && !beastsTotal && !horrorsTotal)
+                                                    {
+                                                        set = true;
+                                                        tooMuch = false;
+                                                    }
+                                                    else
+                                                    {
+                                                        tooMuch = true;
+                                                        set = false;
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    if (windTotal && horrorsTotal)
+                                                    {
+                                                        if (!waterTotal && !fireTotal && !earthTotal && !creaturesTotal && !beastsTotal && !mineralsTotal)
+                                                        {
+                                                            set = true;
+                                                            tooMuch = false;
+                                                        }
+                                                        else
+                                                        {
+                                                            tooMuch = true;
+                                                            set = false;
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        if (earthTotal && creaturesTotal)
+                                                        {
+                                                            if (!fireTotal && !windTotal && !waterTotal && !beastsTotal && !mineralsTotal && !horrorsTotal)
+                                                            {
+                                                                set = true;
+                                                                tooMuch = false;
+                                                            }
+                                                            else
+                                                            {
+                                                                tooMuch = true;
+                                                                set = false;
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                            if (earthTotal && beastsTotal)
+                                                            {
+                                                                if (!fireTotal && !windTotal && !waterTotal && !creaturesTotal && !mineralsTotal && !horrorsTotal)
+                                                                {
+                                                                    set = true;
+                                                                    tooMuch = false;
+                                                                }
+                                                                else
+                                                                {
+                                                                    tooMuch = true;
+                                                                    set = false;
+                                                                }
+                                                            }
+                                                            else
+                                                            {
+                                                                if (earthTotal && mineralsTotal)
+                                                                {
+                                                                    if (!fireTotal && !windTotal && !waterTotal && !creaturesTotal && !beastsTotal && !horrorsTotal)
+                                                                    {
+                                                                        set = true;
+                                                                        tooMuch = false;
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        tooMuch = true;
+                                                                        set = false;
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    if (earthTotal && horrorsTotal)
+                                                                    {
+                                                                        if (!fireTotal && !windTotal && !waterTotal && !creaturesTotal && !beastsTotal && !mineralsTotal)
+                                                                        {
+                                                                            set = true;
+                                                                            tooMuch = false;
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            tooMuch = true;
+                                                                            set = false;
+                                                                        }
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        set = false;
+                                                                        tooMuch = false;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        if (set)
+        {
+            GetComponent<Animator>().SetBool("set", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("set", false);
+        }
+
+        if (tooMuch)
+        {
+            GetComponent<Animator>().SetBool("tooMuch", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("tooMuch", false);
+
+        }
 
     }
 }
