@@ -48,7 +48,7 @@ public class resultTD : MonoBehaviour
     [SerializeField]
     bool tooMuch = false;
     [SerializeField]
-    bool set = false;
+    public bool set = false;
 
     [SerializeField]
     public bool fireTotal = false;
