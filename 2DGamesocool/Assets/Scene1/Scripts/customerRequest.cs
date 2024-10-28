@@ -12,7 +12,7 @@ public class customerRequest : MonoBehaviour
     int iWant = 0;
 
     [SerializeField]
-    bool youGotIt = false;
+    public bool youGotIt = false;
 
     [SerializeField]
    public bool cPlusF = false;
