@@ -26,4 +26,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/maxsCoolSceneWithBlackjackAndHookers/6.unity
     guid: ccb20c50f35bc2242922fba39826b77c
+  - enabled: 1
+    path: Assets/world2/td1.unity
+    guid: ada9ade7368ee5f44ba3f975dbf8ec19
+  - enabled: 1
+    path: Assets/world2/td2.unity
+    guid: 7327f138802b9fa4387b9c5621aab3ac
+  - enabled: 1
+    path: Assets/world2/td3.unity
+    guid: 46eecbf8439fceb4eb9eb1a66b33584f
+  - enabled: 1
+    path: Assets/world2/td4.unity
+    guid: 7e9f678a1830bf744a49283342114d7d
   m_configObjects: {}

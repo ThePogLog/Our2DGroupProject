@@ -7,7 +7,8 @@ public class customerRequest : MonoBehaviour
 
     [SerializeField]
     GameObject result;
-
+    [SerializeField]
+    Animator anim;
     [SerializeField]
     int iWant = 0;
 
@@ -49,7 +50,9 @@ public class customerRequest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       int iWant = Random.Range(1, 16);
+
+        anim = GetComponent<Animator>();
+        int iWant = Random.Range(1, 16);
 
         if (iWant == 1)
         {
@@ -310,6 +313,15 @@ public class customerRequest : MonoBehaviour
             {
                 youGotIt = false;
             }
+        }
+
+        if (youGotIt)
+        {
+            GetComponent<Animator>().SetBool("yay", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("yay", false);
         }
     }
 }
