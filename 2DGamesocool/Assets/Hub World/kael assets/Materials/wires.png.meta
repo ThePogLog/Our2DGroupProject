@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aa1696832ec4b7c48afaf67081ab1311
+guid: b00787e239ab3174d92b7bfc6528d9a1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: p1(1) (1)_0
+      name: wires_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5aff65847c69fc48b7c0fd1a9774131
+      internalID: 636503940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wires_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644d64d14356ebb43b784ea83a7d5902
+      internalID: -213582098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wires_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbd835c3ac032d4fa944b45f6eff23a
+      internalID: -443318706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wires_3
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d26fe8cd41ea9df48ba4879bc3c2f8b3
-      internalID: -1920221519
+      spriteID: 119fefbe11eeca8488ee59be19fb1eeb
+      internalID: 602436053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: p1(1) (1)_1
+      name: wires_4
       rect:
         serializedVersion: 2
         x: 64
@@ -132,14 +195,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4c046287cfcb54428fbca589229b644
-      internalID: 1348486350
+      spriteID: 34154c661309f204f93ad02e66e761b5
+      internalID: 1451728555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: p1(1) (1)_2
+      name: wires_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8549d07fb190c4c4bbf274a413bd7584
+      internalID: 1382683965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wires_6
       rect:
         serializedVersion: 2
         x: 0
@@ -153,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67fd56fb6a78f21469cfb57526450e9b
-      internalID: 719003508
+      spriteID: 49e98a3cb02ee194ea4b152ce0e39f11
+      internalID: 426502407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: p1(1) (1)_3
+      name: wires_7
       rect:
         serializedVersion: 2
         x: 64
@@ -174,14 +258,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f32588ca5041c5240bcf118e81ced3f3
-      internalID: -704342738
+      spriteID: 0a5e9e9ba28077647b68d2117358131e
+      internalID: 1723183366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: p1(1) (1)_4
+      name: wires_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6319684680b5f4e9e9bb5344d72c03
+      internalID: -1153951442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wires_9
       rect:
         serializedVersion: 2
         x: 0
@@ -195,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed8a492fd69e546408ace0f198ac5373
-      internalID: -894866582
+      spriteID: d131e6081e2e0164891ff17a01e2388a
+      internalID: 1042985264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: p1(1) (1)_5
+      name: wires_10
       rect:
         serializedVersion: 2
         x: 64
@@ -216,8 +321,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f317488d8a07904795c1c3e9ea3b0b1
-      internalID: 1232047354
+      spriteID: 61d220e6890531e48bb8eb67fa4259a1
+      internalID: -1807838383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wires_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c72de37f06333c43ba6772f044e9a01
+      internalID: 401745409
       vertices: []
       indices: 
       edges: []
@@ -233,12 +359,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      p1(1) (1)_0: -1920221519
-      p1(1) (1)_1: 1348486350
-      p1(1) (1)_2: 719003508
-      p1(1) (1)_3: -704342738
-      p1(1) (1)_4: -894866582
-      p1(1) (1)_5: 1232047354
+      wires_0: 636503940
+      wires_1: -213582098
+      wires_10: -1807838383
+      wires_11: 401745409
+      wires_2: -443318706
+      wires_3: 602436053
+      wires_4: 1451728555
+      wires_5: 1382683965
+      wires_6: 426502407
+      wires_7: 1723183366
+      wires_8: -1153951442
+      wires_9: 1042985264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
