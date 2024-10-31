@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CutsceneScript : MonoBehaviour
 {
+    [SerializeField]
+    float cutscenetimer;
     public Canvas text1; // Assign this in the Inspector
 
     void Start()
@@ -27,7 +29,7 @@ public class CutsceneScript : MonoBehaviour
     IEnumerator SpawnDelay()
     {
         text1.enabled = true;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(cutscenetimer);
         text1.enabled = false;
     }
 }
