@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3477f1db59c2d4880dcd258af432d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutscenetimer: 3
   text1: {fileID: 2109725881}
 --- !u!251 &18509958
 PlatformEffector2D:
@@ -10970,6 +10971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3477f1db59c2d4880dcd258af432d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutscenetimer: 3
   text1: {fileID: 262259067}
 --- !u!251 &706902110
 PlatformEffector2D:
@@ -16406,6 +16408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3477f1db59c2d4880dcd258af432d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutscenetimer: 3
   text1: {fileID: 1101656342}
 --- !u!251 &769831379
 PlatformEffector2D:
@@ -25131,6 +25134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3477f1db59c2d4880dcd258af432d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutscenetimer: 3
   text1: {fileID: 820312521}
 --- !u!251 &1139050003
 PlatformEffector2D:
@@ -25788,6 +25792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3477f1db59c2d4880dcd258af432d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutscenetimer: 3
   text1: {fileID: 1377547886}
 --- !u!251 &1302589209
 PlatformEffector2D:
@@ -38615,6 +38620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3477f1db59c2d4880dcd258af432d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutscenetimer: 3
   text1: {fileID: 1718071}
 --- !u!251 &1592727612
 PlatformEffector2D:
@@ -47961,6 +47967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3477f1db59c2d4880dcd258af432d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutscenetimer: 3
   text1: {fileID: 577387259}
 --- !u!251 &1957442036
 PlatformEffector2D:
@@ -53820,7 +53827,7 @@ PrefabInstance:
     - target: {fileID: 8210309632207495644, guid: 4c1d084139c59404fa51e867984124c4, type: 3}
       propertyPath: OFDroid5
       value: 
-      objectReference: {fileID: 7158684}
+      objectReference: {fileID: 1754657146}
     - target: {fileID: 8210309632207495644, guid: 4c1d084139c59404fa51e867984124c4, type: 3}
       propertyPath: OFDroid6
       value: 
@@ -54221,6 +54228,10 @@ PrefabInstance:
       propertyPath: text1
       value: 
       objectReference: {fileID: 1126821856}
+    - target: {fileID: 3393910945045083207, guid: d0fd99b62679544488e23592bc2e2e47, type: 3}
+      propertyPath: cutscenetimer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3872887774099036322, guid: d0fd99b62679544488e23592bc2e2e47, type: 3}
       propertyPath: m_Color.a
       value: 0
