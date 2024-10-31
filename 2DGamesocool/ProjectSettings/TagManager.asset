@@ -16,6 +16,8 @@ TagManager:
   - elementMinerals
   - elementBeasts
   - elementHorrors
+  - TrainingDummy
+  - Bullets
   layers:
   - Default
   - TransparentFX
