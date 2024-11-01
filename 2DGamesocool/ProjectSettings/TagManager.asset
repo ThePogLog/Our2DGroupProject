@@ -19,6 +19,7 @@ TagManager:
   - TrainingDummy
   - Bullets
   - GCabnet
+  - EnemyBullets
   layers:
   - Default
   - TransparentFX
