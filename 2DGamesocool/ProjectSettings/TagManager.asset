@@ -18,6 +18,7 @@ TagManager:
   - elementHorrors
   - TrainingDummy
   - Bullets
+  - EnemyBullets
   layers:
   - Default
   - TransparentFX
