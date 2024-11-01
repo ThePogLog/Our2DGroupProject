@@ -18,6 +18,7 @@ TagManager:
   - elementHorrors
   - TrainingDummy
   - Bullets
+  - GCabnet
   layers:
   - Default
   - TransparentFX
