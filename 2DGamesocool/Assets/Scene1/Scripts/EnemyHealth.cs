@@ -10,10 +10,15 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] Color Damagecolorpicker;
     [SerializeField] float Colortimer;
     [SerializeField] Color ColorOriginal;
+    public EnemyKillCount killCountScript;
 
     void Start()
     {
         ColorOriginal = GetComponent<SpriteRenderer>().color; // Save the original color
+        if (killCountScript == null)
+        {
+            killCountScript = FindObjectOfType<EnemyKillCount>();
+        }
     }
 
     void Update()
@@ -41,4 +46,15 @@ public class EnemyHealth : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    void OnDestroy()
+    {
+        if (killCountScript != null)
+        {
+            killCountScript.EnemyDestroyed();
+        }
+    }
 }
+
+
+
