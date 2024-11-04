@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scene1/Level3.unity
     guid: fe3b90cfd8c84904c9ad851b0f425ea1
   - enabled: 1
-    path: Assets/Level 3 - 2.unity
+    path: Assets/Scene1/Level 3 - 2.unity
     guid: b7c8982beed0b7947abe2373b2f1d935
+  - enabled: 1
+    path: Assets/Scene1/Level3FakeWin.unity
+    guid: 999c346d4f2864148a1659ecf9fc9237
   m_configObjects: {}
