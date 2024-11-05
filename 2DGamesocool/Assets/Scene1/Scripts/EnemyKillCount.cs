@@ -19,7 +19,7 @@ public class EnemyKillCount : MonoBehaviour
 
     public void EnemyDestroyed()
     {
-        killCount += 1;
+        killCount ++;
         Debug.Log("Enemy destroyed. Current kill count: " + killCount); 
         UpdateKillCountText();
         PlatformDestroy();
