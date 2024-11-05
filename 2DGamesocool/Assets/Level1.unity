@@ -107093,7 +107093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7baed7bb8036594408a5478cfd36e3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Level1
+  levelToLoad: hub2
   yes: {fileID: 1167762312}
   Seconds: 0.05
   Wait: 7

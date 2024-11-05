@@ -51,15 +51,27 @@ EditorBuildSettings:
     path: Assets/Scene1/Level3FakeWin.unity
     guid: 999c346d4f2864148a1659ecf9fc9237
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Hub World/hub1.unity
+=======
+    path: Assets/Hub World/Scene3.unity
+>>>>>>> Stashed changes
     guid: b1c6e2f32743b434abd4a8eabdb6b16d
   - enabled: 1
     path: Assets/Hub World/hub2.unity
     guid: 315bc8570d8beee44946dab03789691f
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Hub World/hub3.unity
     guid: f0da8549c35a65d4a98998d24f158cd3
   - enabled: 1
     path: Assets/Hub World/hub4.unity
     guid: c266797b14f03b94993612c2592a5aa9
+=======
+    path: Assets/Hub World/credits.unity
+    guid: 62c4f8a586295d34ca37a78f3039c2ba
+  - enabled: 1
+    path: Assets/Level1.unity
+    guid: 677f8b51d6cc7224bb38f75f7cd39f26
+>>>>>>> Stashed changes
   m_configObjects: {}
