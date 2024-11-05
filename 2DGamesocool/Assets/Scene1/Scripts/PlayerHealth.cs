@@ -13,79 +13,60 @@ public class PlayerHealth : MonoBehaviour
 
     public Image healthBar;
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(collision.gameObject.name);
-        //we want to take damage IF the player hits the enemy capsule
-        //bool key = true;
-        if (collision.gameObject.tag == "Enemy")
+        // Take damage if the player hits an enemy or enemy bullet
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "EnemyBullets")
         {
-            //health = health - 1;
             health -= 1;
-            healthBar.fillAmount = health / 100f;
-            //health--;
-            if (health <= 0)
-            {
-                SceneManager.LoadScene(levelToLoad);
-            }
+            UpdateHealthBar();
         }
     }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "EnemyBullets")
         {
             health -= 1;
-            healthBar.fillAmount = health / 100f;
-
-            if (health <= 0)
-            {
-                SceneManager.LoadScene(levelToLoad);
-            }
+            UpdateHealthBar();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject.name);
-        //we want to take damage IF the player hits the enemy capsule
-        //bool key = true;
-        if (collision.gameObject.tag == "Enemy")
+        // Take damage if the player hits an enemy or enemy bullet
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "EnemyBullets")
         {
-            //health = health - 1;
             health -= 1;
-            healthBar.fillAmount = health / 100f;
-
-            //health--;
-            if (health <= 0)
-            {
-                SceneManager.LoadScene(levelToLoad);
-            }
+            UpdateHealthBar();
         }
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "EnemyBullets")
         {
             health -= 1;
-            healthBar.fillAmount = health / 100f;
+            UpdateHealthBar();
+        }
+    }
 
-            if (health <= 0)
-            {
-                SceneManager.LoadScene(levelToLoad);
-            }
+    void UpdateHealthBar()
+    {
+        healthBar.fillAmount = health / 10f; // Adjusting to ensure health is between 0 and 1
+        if (health <= 0)
+        {
+            SceneManager.LoadScene(levelToLoad);
         }
     }
 }
