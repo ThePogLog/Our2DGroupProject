@@ -6,26 +6,56 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Level1.unity
+    guid: 677f8b51d6cc7224bb38f75f7cd39f26
+  - enabled: 1
+    path: Assets/Scene1/Level3.unity
+    guid: fe3b90cfd8c84904c9ad851b0f425ea1
+  - enabled: 1
+    path: Assets/Scene1/Level3 - 1.unity
+    guid: 5a195f81645d91f41bd7c1c39799fde4
+  - enabled: 1
+    path: Assets/Scene1/Level3FakeWin.unity
+    guid: 999c346d4f2864148a1659ecf9fc9237
+  - enabled: 1
+    path: Assets/Scene1/Level 3 - 2.unity
+    guid: b7c8982beed0b7947abe2373b2f1d935
   - enabled: 1
     path: Assets/maxsCoolSceneWithBlackjackAndHookers/1.unity
     guid: 38bc6eecd4027e64b9a59eb3c13fef98
   - enabled: 1
     path: Assets/maxsCoolSceneWithBlackjackAndHookers/2.unity
-    guid: b66e27a23f05b7141af46444a434398c
+    guid: cbc9979d6f15c5a458ee87701f740421
   - enabled: 1
     path: Assets/maxsCoolSceneWithBlackjackAndHookers/3.unity
-    guid: 9491b7101332838468c37f09155cfb00
+    guid: f11585fe3e09aef44b6aee7b080ca4fd
   - enabled: 1
     path: Assets/maxsCoolSceneWithBlackjackAndHookers/4.unity
-    guid: 7053b585239a82a47b65160a5aacb2c4
+    guid: 8cb81689f46c7d946bf48f2d35eadc76
   - enabled: 1
     path: Assets/maxsCoolSceneWithBlackjackAndHookers/5.unity
-    guid: 0c94a8a6c30b90a4e8e3a0b1d5f566a9
+    guid: 55f330a92181afb44b0b3c82b69ed0b3
   - enabled: 1
     path: Assets/maxsCoolSceneWithBlackjackAndHookers/6.unity
     guid: ccb20c50f35bc2242922fba39826b77c
+  - enabled: 1
+    path: Assets/maxsCoolSceneWithBlackjackAndHookers/Scene2.unity
+    guid: 9962be8d272db7b48a7459f1d306ec0d
+  - enabled: 1
+    path: Assets/Hub World/hub1.unity
+    guid: b1c6e2f32743b434abd4a8eabdb6b16d
+  - enabled: 1
+    path: Assets/Hub World/hub2.unity
+    guid: 315bc8570d8beee44946dab03789691f
+  - enabled: 1
+    path: Assets/Hub World/hub3.unity
+    guid: f0da8549c35a65d4a98998d24f158cd3
+  - enabled: 1
+    path: Assets/Hub World/hub4.unity
+    guid: c266797b14f03b94993612c2592a5aa9
+  - enabled: 1
+    path: Assets/Hub World/endingHub.unity
+    guid: bd660c92e580fa44780a30a284f97a00
   - enabled: 1
     path: Assets/world2/td1.unity
     guid: ada9ade7368ee5f44ba3f975dbf8ec19
@@ -38,40 +68,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/world2/td4.unity
     guid: 7e9f678a1830bf744a49283342114d7d
-  - enabled: 1
-    path: Assets/Scene1/Level3 - 1.unity
-    guid: 5a195f81645d91f41bd7c1c39799fde4
-  - enabled: 1
-    path: Assets/Scene1/Level3.unity
-    guid: fe3b90cfd8c84904c9ad851b0f425ea1
-  - enabled: 1
-    path: Assets/Scene1/Level 3 - 2.unity
-    guid: b7c8982beed0b7947abe2373b2f1d935
-  - enabled: 1
-    path: Assets/Scene1/Level3FakeWin.unity
-    guid: 999c346d4f2864148a1659ecf9fc9237
-  - enabled: 1
-<<<<<<< Updated upstream
-    path: Assets/Hub World/hub1.unity
-=======
-    path: Assets/Hub World/Scene3.unity
->>>>>>> Stashed changes
-    guid: b1c6e2f32743b434abd4a8eabdb6b16d
-  - enabled: 1
-    path: Assets/Hub World/hub2.unity
-    guid: 315bc8570d8beee44946dab03789691f
-  - enabled: 1
-<<<<<<< Updated upstream
-    path: Assets/Hub World/hub3.unity
-    guid: f0da8549c35a65d4a98998d24f158cd3
-  - enabled: 1
-    path: Assets/Hub World/hub4.unity
-    guid: c266797b14f03b94993612c2592a5aa9
-=======
-    path: Assets/Hub World/credits.unity
-    guid: 62c4f8a586295d34ca37a78f3039c2ba
-  - enabled: 1
-    path: Assets/Level1.unity
-    guid: 677f8b51d6cc7224bb38f75f7cd39f26
->>>>>>> Stashed changes
   m_configObjects: {}
