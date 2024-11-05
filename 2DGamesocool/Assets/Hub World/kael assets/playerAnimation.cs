@@ -16,14 +16,16 @@ public class playerAnimation : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") != 0)
         {
+            Vector2 velocity = GetComponent<Rigidbody2D>().velocity;
+            GetComponent<Rigidbody2D>().velocity = velocity;
             float x = Input.GetAxis("Horizontal");
-            GetComponent<Animator>().SetFloat("X", x);
+            GetComponent<Animator>().SetFloat("x", x);
             GetComponent<Animator>().SetBool("Idle", false);
         }
         else if (Input.GetAxis("Vertical") != 0)
         {
             float y = Input.GetAxis("Vertical");
-            GetComponent<Animator>().SetFloat("Y", y);
+            GetComponent<Animator>().SetFloat("y", y);
             GetComponent<Animator>().SetBool("Idle", false);
         }
         else
