@@ -27,6 +27,8 @@ public class MyLastScript : MonoBehaviour
     public Canvas canvas10;
     public NewPlatformerMovement script;
     public GameObject player;
+    public GameObject coffee;
+    public GameObject trophy;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +53,9 @@ public class MyLastScript : MonoBehaviour
         destroy.enabled = false;
         yield return new WaitForSeconds(Wait);
         player.GetComponent<SpriteRenderer>().enabled = false;
+        coffee.GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitForSeconds(almost);
+        trophy.GetComponent<SpriteRenderer>().enabled = true;
         yes.GetComponent<Camera>().backgroundColor = Color.black;
         canvas.enabled = true;
         yield return new WaitForSeconds(Seconds);
