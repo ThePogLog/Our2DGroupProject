@@ -22,7 +22,7 @@ public class duoEndingTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.tag == "platformingDuoCharacter")
+        if (collision.gameObject.tag == "Player")
         {
             jumpscareTime = true;
         }
